@@ -1,0 +1,26 @@
+$def with(datos)
+<html>
+    <head></head>
+    <body>
+        <center><table border="10px"></center>
+            <tr>
+                <td width="60"><strong>NO</strong></td>
+                <td width="260"><strong><center>CLAVE_PROCEDENCIA</strong></td>
+                <td width="200"><strong><center>SEXO</strong></td>
+                <td width="90"><strong>EDAD</strong></td>
+                <td width="90"><strong>DESCRIPCION DE DIAGNOSTICO</strong></td>
+                </tr>
+            $ posicion=0 
+            $for row in datos:
+            <tr>
+                <td>$posicion</td> 
+                <td>$row['FIELD3']</td>
+                <td>$row['FIELD6']</td>
+                <td>$row['FIELD7']</td>
+                <td>$row['FIELD13']</td>
+                $ posicion += 1
+                </tr>
+    </body>
+</html>
+    
+     
